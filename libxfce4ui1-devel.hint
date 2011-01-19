@@ -1,0 +1,5 @@
+category: Xfce
+requires: libxfce4ui1_0 libatk1.0-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel libICE-devel libpango1.0-devel libSM-devel libX11-devel libxfce4util-devel libstartup-notification1-devel
+external-source: libxfce4ui
+sdesc: "Xfce4 GUI library (development)"
+ldesc: "Xfce4 GUI library"

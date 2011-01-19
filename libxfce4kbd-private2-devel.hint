@@ -1,0 +1,5 @@
+category: Xfce
+requires: libxfce4kbd-private2_0 libglib2.0-devel libgtk2.0-devel libX11-devel libxfce4ui1-devel libxfce4util-devel libxfconf0-devel
+external-source: libxfce4ui
+sdesc: "Xfce4 keyboard library (development)"
+ldesc: "Xfce4 GUI library"
