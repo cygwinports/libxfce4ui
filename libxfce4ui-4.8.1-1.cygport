@@ -5,7 +5,7 @@ DESCRIPTION="Xfce GUI library"
 PKG_NAMES="${PN}1_0 ${PN}1-devel libxfce4kbd-private2_0 libxfce4kbd-private2-devel glade3-xfce4ui"
 libxfce4ui1_0_CONTENTS="usr/bin/cygxfce4ui-1-0.dll usr/share/doc/ usr/share/locale/"
 libxfce4ui1_devel_CONTENTS="usr/include/xfce4/libxfce4ui-1/ usr/lib/libxfce4ui-1.*
-                           usr/lib/pkgconfig/libxfce4ui-1.pc usr/share/gtk-doc/"
+                           usr/lib/pkgconfig/libxfce4ui-1.pc"
 libxfce4kbd_private2_0_CONTENTS="etc/xdg/ usr/bin/cygxfce4kbd-private-2-0.dll"
 libxfce4kbd_private2_devel_CONTENTS="usr/include/xfce4/libxfce4kbd-private-2/
                                     usr/lib/libxfce4kbd-private-2.*
