@@ -1,0 +1,5 @@
+category: Xfce
+requires: libglib2.0_0 libgtk2.0_0 libxfce4ui1_0 libxfce4util6
+external-source: libxfce4ui
+sdesc: "Xfce4 About dialog"
+ldesc: "Xfce4 GUI library"

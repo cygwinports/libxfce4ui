@@ -2,7 +2,8 @@ inherit xfce4
 
 DESCRIPTION="Xfce GUI library"
 
-PKG_NAMES="${PN}1_0 ${PN}1-devel libxfce4kbd-private2_0 libxfce4kbd-private2-devel glade3-xfce4ui"
+PKG_NAMES="${PN}1_0 ${PN}1-devel libxfce4kbd-private2_0 libxfce4kbd-private2-devel
+           glade3-xfce4ui xfce4-about"
 libxfce4ui1_0_CONTENTS="usr/bin/cygxfce4ui-1-0.dll usr/share/doc/ usr/share/locale/"
 libxfce4ui1_devel_CONTENTS="usr/include/xfce4/libxfce4ui-1/ usr/lib/libxfce4ui-1.*
                            usr/lib/pkgconfig/libxfce4ui-1.pc"
@@ -11,3 +12,6 @@ libxfce4kbd_private2_devel_CONTENTS="usr/include/xfce4/libxfce4kbd-private-2/
                                     usr/lib/libxfce4kbd-private-2.*
                                     usr/lib/pkgconfig/libxfce4kbd-private-2.pc"
 glade3_xfce4ui_CONTENTS="usr/lib/glade3/ usr/share/glade3/"
+xfce4_about_CONTENTS="etc/postinstall/ usr/bin/xfce4-about.exe
+                      usr/share/applications/ usr/share/icons/"
+
