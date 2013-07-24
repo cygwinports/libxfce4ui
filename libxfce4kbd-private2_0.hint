@@ -1,5 +1,0 @@
-category: Xfce
-requires: libglib2.0_0 libgtk2.0_0 libX11_6 libxfce4ui1_0 libxfce4util6 libxfconf0_2
-external-source: libxfce4ui
-sdesc: "Xfce4 keyboard library (runtime)"
-ldesc: "Xfce4 GUI library"
