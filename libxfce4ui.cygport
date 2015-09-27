@@ -1,24 +1,52 @@
 inherit xfce4
 
 NAME="libxfce4ui"
-VERSION=4.10.0
+VERSION=4.12.1
 RELEASE=1
 CATEGORY="Libs"
-SUMMARY="Xfce4 GUI library"
+SUMMARY="Xfce4 GUI libraries"
 DESCRIPTION="This is libxfce4ui, the replacement of the old libxfcegui4 library.
 It is used to share commonly used Xfce widgets amoung the Xfce applications."
 
-PKG_NAMES="${NAME}1_0 ${NAME}1-devel libxfce4kbd-private2_0 libxfce4kbd-private2-devel
-           glade3-xfce4ui xfce4-about"
-libxfce4ui1_0_CONTENTS="usr/bin/cygxfce4ui-1-0.dll usr/share/doc/ usr/share/locale/"
-libxfce4ui1_devel_CONTENTS="usr/include/xfce4/libxfce4ui-1/ usr/lib/libxfce4ui-1.*
-                           usr/lib/pkgconfig/libxfce4ui-1.pc"
-libxfce4kbd_private2_0_SUMMARY="Xfce4 keyboard library"
-libxfce4kbd_private2_0_CONTENTS="etc/xdg/ usr/bin/cygxfce4kbd-private-2-0.dll"
-libxfce4kbd_private2_devel_SUMMARY="Xfce4 keyboard library"
-libxfce4kbd_private2_devel_CONTENTS="usr/include/xfce4/libxfce4kbd-private-2/
-                                    usr/lib/libxfce4kbd-private-2.*
-                                    usr/lib/pkgconfig/libxfce4kbd-private-2.pc"
+PKG_NAMES="${NAME}1_0 ${NAME}1-devel ${NAME}2_0 ${NAME}2-devel ${NAME}-common
+	libxfce4kbd-private2_0 libxfce4kbd-private2-devel
+	libxfce4kbd-private3_0 libxfce4kbd-private3-devel
+	glade3-xfce4ui xfce4-about"
+libxfce4ui_common_CONTENTS="etc/xdg/ usr/share/doc/ usr/share/locale/"
+libxfce4ui1_0_SUMMARY="Xfce4 GTK2 GUI library"
+libxfce4ui1_0_REQUIRES="libxfce4ui-common"
+libxfce4ui1_0_CONTENTS="usr/bin/cygxfce4ui-1-0.dll"
+libxfce4ui1_devel_SUMMARY="Xfce4 GTK2 GUI library"
+libxfce4ui1_devel_CONTENTS="
+	usr/include/xfce4/libxfce4ui-1/
+	usr/lib/libxfce4ui-1.*
+	usr/lib/pkgconfig/libxfce4ui-1.pc
+"
+libxfce4ui2_0_SUMMARY="Xfce4 GTK3 GUI library"
+libxfce4ui2_0_REQUIRES="libxfce4ui-common"
+libxfce4ui2_0_CONTENTS="usr/bin/cygxfce4ui-2-0.dll"
+libxfce4ui2_devel_SUMMARY="Xfce4 GTK3 GUI library"
+libxfce4ui2_devel_CONTENTS="
+	usr/include/xfce4/libxfce4ui-2/
+	usr/lib/libxfce4ui-2.*
+	usr/lib/pkgconfig/libxfce4ui-2.pc
+"
+libxfce4kbd_private2_0_SUMMARY="Xfce4 GTK2 keyboard library"
+libxfce4kbd_private2_0_CONTENTS="usr/bin/cygxfce4kbd-private-2-0.dll"
+libxfce4kbd_private2_devel_SUMMARY="Xfce4 GTK2 keyboard library"
+libxfce4kbd_private2_devel_CONTENTS="
+	usr/include/xfce4/libxfce4kbd-private-2/
+	usr/lib/libxfce4kbd-private-2.*
+	usr/lib/pkgconfig/libxfce4kbd-private-2.pc
+"
+libxfce4kbd_private3_0_SUMMARY="Xfce4 GTK3 keyboard library"
+libxfce4kbd_private3_0_CONTENTS="usr/bin/cygxfce4kbd-private-3-0.dll"
+libxfce4kbd_private3_devel_SUMMARY="Xfce4 GTK3 keyboard library"
+libxfce4kbd_private3_devel_CONTENTS="
+	usr/include/xfce4/libxfce4kbd-private-3/
+	usr/lib/libxfce4kbd-private-3.*
+	usr/lib/pkgconfig/libxfce4kbd-private-3.pc
+"
 glade3_xfce4ui_CATEGORY="Devel"
 glade3_xfce4ui_CONTENTS="usr/lib/glade3/ usr/share/glade3/"
 xfce4_about_CATEGORY="Xfce"
