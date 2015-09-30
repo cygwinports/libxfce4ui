@@ -8,6 +8,8 @@ SUMMARY="Xfce4 GUI libraries"
 DESCRIPTION="This is libxfce4ui, the replacement of the old libxfcegui4 library.
 It is used to share commonly used Xfce widgets amoung the Xfce applications."
 
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/libxfce4ui.git/plain/libxfce4ui-4.12.1-keyboard-shortcuts.patch"
+
 PKG_NAMES="${NAME}1_0 ${NAME}1-devel ${NAME}2_0 ${NAME}2-devel ${NAME}-common
 	libxfce4kbd-private2_0 libxfce4kbd-private2-devel
 	libxfce4kbd-private3_0 libxfce4kbd-private3-devel
